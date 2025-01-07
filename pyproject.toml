@@ -1,0 +1,7 @@
+[project]
+name = "morph-game-engine"
+version = "0.1"
+dependencies = [
+    "diagrams>=0.24.1",
+    "ruff>=0.8.6",
+]

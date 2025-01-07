@@ -1,0 +1,26 @@
+digraph "Game engine" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Game engine" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	subgraph cluster_Components {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label=Components labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		ec05a751f56748298e06ba2f9e96c6b5 [label="Scene graph" height=1.9 image="D:\PersonalProjects\python game engine\morph-engine\.venv\Lib\site-packages\resources/programming/flowchart\display.png" shape=none]
+		"066a9d4969f8406eb49fff22b59ef354" [label="Game manager" height=1.9 image="D:\PersonalProjects\python game engine\morph-engine\.venv\Lib\site-packages\resources/programming/flowchart\action.png" shape=none]
+		f11e4400ef9f4d0d995f4b07b972fa7b [label="State synchronization" height=1.9 image="D:\PersonalProjects\python game engine\morph-engine\.venv\Lib\site-packages\resources/programming/flowchart\action.png" shape=none]
+		cbbcd37c6e4940b8ac4e0fd978f2c835 [label=main height=1.9 image="D:\PersonalProjects\python game engine\morph-engine\.venv\Lib\site-packages\resources/programming/language\python.png" shape=none]
+	}
+	subgraph cluster_Gameplay {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label=Gameplay labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		subgraph cluster_Scripting {
+			graph [bgcolor="#EBF3E7" fontname="Sans-Serif" fontsize=12 label=Scripting labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+			"4cefe948864640cba4b0d62c7e971ea4" [label=Scripting height=1.9 image="D:\PersonalProjects\python game engine\morph-engine\.venv\Lib\site-packages\resources/programming/flowchart\display.png" shape=none]
+			"79e5691c76444ca7beeb549ddc0bbc02" [label="Game objects" height=1.9 image="D:\PersonalProjects\python game engine\morph-engine\.venv\Lib\site-packages\resources/programming/flowchart\display.png" shape=none]
+		}
+		subgraph cluster_Art {
+			graph [bgcolor="#EBF3E7" fontname="Sans-Serif" fontsize=12 label=Art labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+			b0108e1a76c34e02ac62e4d04e0e8c0c [label=Animations height=1.9 image="D:\PersonalProjects\python game engine\morph-engine\.venv\Lib\site-packages\resources/programming/flowchart\display.png" shape=none]
+			"947c093fba8f4f9fb41f4e562eb2206b" [label=Audio height=1.9 image="D:\PersonalProjects\python game engine\morph-engine\.venv\Lib\site-packages\resources/programming/flowchart\display.png" shape=none]
+		}
+	}
+	f11e4400ef9f4d0d995f4b07b972fa7b -> "4cefe948864640cba4b0d62c7e971ea4" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}
