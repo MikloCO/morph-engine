@@ -5,8 +5,5 @@ A game engine in Python, no reason, just because it's fun.
 
 
 Diagram as code. 
-https://diagrams.mingrammer.com/docs/getting-started/examples
-
 ![image](docs/architecture.png)
 
-https://pyopengl.sourceforge.net/
