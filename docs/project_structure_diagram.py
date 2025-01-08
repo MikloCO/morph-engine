@@ -47,8 +47,9 @@ with Diagram("Game Engine Architecture", show=False, direction="TB", filename="d
         scripting = Python("Scripting")
         npc = Lambda("NPC Logic")
         input_io = PublicIpAddresses("Input System")
+        game_events = Lambda("Events")
 
-        scripting >> [npc, input_io]
+        scripting >> [npc, input_io, game_events]
 
 
 
