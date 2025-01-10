@@ -56,3 +56,10 @@ class ParentObjectCls:
         self.object_type = object_type
         self.children = children
 
+
+class Player:
+    def __init__(self, *, name: str, object_type: Type):
+        self.name = name
+        self.object_type = object_type
+
+

@@ -3,11 +3,15 @@ name = "morph-game-engine"
 version = "0.1"
 dependencies = [
     "diagrams>=0.24.1",
+    "inflection>=0.5.1",
+    "jinja2>=3.1.5",
     "pip>=24.3.1",
     "pydantic>=2.10.4",
+    "pysdl3>=0.8.1b0",
     "pytest>=8.3.4",
     "ruff>=0.8.6",
     "setuptools>=75.8.0",
+    "xmltodict>=0.14.2",
 ]
 [requires]
 python_version = "3.12"
