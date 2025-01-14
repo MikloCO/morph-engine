@@ -7,6 +7,7 @@ dependencies = [
     "jinja2>=3.1.5",
     "pip>=24.3.1",
     "pydantic>=2.10.4",
+    "pyopengl>=3.1.7",
     "pysdl3>=0.8.1b0",
     "pytest>=8.3.4",
     "ruff>=0.8.6",

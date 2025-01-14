@@ -7,3 +7,6 @@ A game engine in Python, no reason, just because it's fun.
 Diagram as code. 
 ![image](docs/architecture.png)
 
+OpenGL docs
+[link](https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf)
+
